@@ -1,0 +1,83 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/********************************
+        Font Style
+*********************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Playfair+Display&display=swap');
+
+html{
+  font-family: 'Akaya Kanadaka', cursive;
+  font-size: 16px;
+ 
+}
+
+/********************************
+        Base Style
+*********************************/
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: #6F8695;
+  color: #fff;
+}
+
+h1{
+  font-size: 3em;
+  letter-spacing: .1em;
+}
+
+#counter{
+  font-size: 5em;
+  font-family: 'Playfair Display', serif;
+}
+
+button{
+  padding: 10px 25px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  margin-top: 25px;
+}
+
+button:nth-child(2){
+  margin: 0 10px;
+}
+
+#btnIncrease{
+  background-color: #dbfe87;
+}
+
+#btnDecrease{
+  background-color: #f4978e;
+}
+
+
+/********************************
+        Media Queries
+*********************************/
+
+@media only screen and (max-width:387px){
+  btnContainer{
+    width: 50px;
+    display: flex;
+
+  }
+  button{
+    display: block;
+    margin: 10px auto;
+  }
+  button:nth-child(2){
+    margin: 10px auto
+  }
+
+  
+}
